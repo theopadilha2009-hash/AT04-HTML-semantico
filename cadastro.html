@@ -3,13 +3,13 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <meta name="description" content="Formulário de inscrição no campeonato escolar de construção no Roblox Studio.">
-    <title>Cadastro — Meu Mundo Roblox</title>
+    <meta name="description" content="Formulário de inscrição no Demo Day escolar, evento em que os alunos apresentam ideias de startups.">
+    <title>Cadastro — Mundo Startup</title>
   </head>
   <body>
     <a href="#conteudo">Pular para o conteúdo</a>
     <header id="topo">
-      <p>Meu Mundo Roblox</p>
+      <p>Mundo Startup</p>
       <nav aria-label="Menu principal">
         <ul>
           <li><a href="index.html">Início</a></li>
@@ -21,8 +21,8 @@
       </nav>
     </header>
     <main id="conteudo">
-      <h1>Inscrição no campeonato de construção</h1>
-      <p>Preencha o formulário para participar do campeonato escolar de construção no Roblox Studio. Os campos com asterisco (*) são obrigatórios.</p>
+      <h1>Inscrição no Demo Day escolar</h1>
+      <p>Preencha o formulário para apresentar a sua ideia de startup no Demo Day escolar. Os campos com asterisco (*) são obrigatórios.</p>
 
       <form action="#" method="post">
         <fieldset>
@@ -46,67 +46,67 @@
         </fieldset>
 
         <fieldset>
-          <legend>Categoria do campeonato *</legend>
+          <legend>Área da sua ideia *</legend>
           <p>
-            <input type="radio" id="cat-obby" name="categoria" value="obby" required>
-            <label for="cat-obby">Obby</label>
+            <input type="radio" id="area-tecnologia" name="area" value="tecnologia" required>
+            <label for="area-tecnologia">Tecnologia</label>
           </p>
           <p>
-            <input type="radio" id="cat-cidade" name="categoria" value="cidade">
-            <label for="cat-cidade">Cidade</label>
+            <input type="radio" id="area-educacao" name="area" value="educacao">
+            <label for="area-educacao">Educação</label>
           </p>
           <p>
-            <input type="radio" id="cat-aventura" name="categoria" value="aventura">
-            <label for="cat-aventura">Aventura</label>
+            <input type="radio" id="area-sustentabilidade" name="area" value="sustentabilidade">
+            <label for="area-sustentabilidade">Sustentabilidade</label>
           </p>
         </fieldset>
 
         <fieldset>
-          <legend>Experiência com o Roblox Studio</legend>
+          <legend>Estágio da ideia</legend>
           <p>
-            <label for="nivel">Meu nível *</label>
-            <select id="nivel" name="nivel" required>
+            <label for="estagio">Em que ponto você está? *</label>
+            <select id="estagio" name="estagio" required>
               <option value="">Escolha uma opção</option>
-              <option value="iniciante">Iniciante</option>
-              <option value="intermediario">Intermediário</option>
-              <option value="avancado">Avançado</option>
+              <option value="ideia">Só tenho a ideia</option>
+              <option value="prototipo">Já tenho um protótipo</option>
+              <option value="testado">Já testei com pessoas</option>
             </select>
           </p>
           <p>
-            <label for="horas">Horas de jogo por semana</label>
+            <label for="horas">Horas por semana que posso dedicar</label>
             <input type="number" id="horas" name="horas" min="0" max="40" value="5">
           </p>
           <p>
-            <label for="nota">Nota que dou ao Roblox Studio (0 a 10)</label>
-            <input type="number" id="nota" name="nota" min="0" max="10" step="0.5" value="8.5">
+            <label for="confianca">Nota de confiança na ideia (0 a 10)</label>
+            <input type="number" id="confianca" name="confianca" min="0" max="10" step="0.5" value="7.5">
           </p>
         </fieldset>
 
         <fieldset>
-          <legend>Modos de jogo preferidos</legend>
+          <legend>Ajuda que eu preciso</legend>
           <p>
-            <input type="checkbox" id="modo-solo" name="modos" value="solo">
-            <label for="modo-solo">Solo</label>
+            <input type="checkbox" id="ajuda-design" name="ajuda" value="design">
+            <label for="ajuda-design">Design</label>
           </p>
           <p>
-            <input type="checkbox" id="modo-dupla" name="modos" value="dupla">
-            <label for="modo-dupla">Em dupla</label>
+            <input type="checkbox" id="ajuda-programacao" name="ajuda" value="programacao">
+            <label for="ajuda-programacao">Programação</label>
           </p>
           <p>
-            <input type="checkbox" id="modo-equipe" name="modos" value="equipe">
-            <label for="modo-equipe">Em equipe</label>
+            <input type="checkbox" id="ajuda-pitch" name="ajuda" value="pitch">
+            <label for="ajuda-pitch">Montar o pitch</label>
           </p>
         </fieldset>
 
         <fieldset>
           <legend>Finalização</legend>
           <p>
-            <label for="mensagem">Por que você quer participar? (até 300 caracteres)</label>
-            <textarea id="mensagem" name="mensagem" rows="5" maxlength="300"></textarea>
+            <label for="ideia">Descreva a sua ideia (até 300 caracteres)</label>
+            <textarea id="ideia" name="ideia" rows="5" maxlength="300"></textarea>
           </p>
           <p>
             <input type="checkbox" id="termos" name="termos" value="aceito" required>
-            <label for="termos">Li e aceito os termos do campeonato *</label>
+            <label for="termos">Li e aceito as regras do Demo Day *</label>
           </p>
         </fieldset>
 
