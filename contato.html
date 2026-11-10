@@ -20,6 +20,63 @@
       </nav>
     </header>
     <main id="conteudo">
+      <h1>Fale comigo</h1>
+      <p>Tem alguma dúvida ou sugestão sobre o site ou sobre o campeonato? Use uma das formas abaixo. Os dados desta página são fictícios.</p>
+
+      <section>
+        <h2>Onde estou</h2>
+        <address>
+          <p>Clube dos Construtores</p>
+          <p>Rua dos Blocos, 123 — Bairro Exemplo</p>
+          <p>Cidade Exemplo — SP, 00000-000</p>
+          <p>E-mail: <a href="mailto:contato@example.com">contato@example.com</a></p>
+          <p>Telefone: <a href="tel:+5511912345678">(11) 91234-5678</a></p>
+        </address>
+        <p><a href="https://www.openstreetmap.org/" target="_blank" rel="noopener noreferrer">Abrir o OpenStreetMap em uma nova aba</a></p>
+      </section>
+
+      <section>
+        <h2>Horário de atendimento</h2>
+        <dl>
+          <dt>Segunda a sexta</dt>
+          <dd>14h às 18h</dd>
+          <dt>Sábado</dt>
+          <dd>9h às 12h</dd>
+          <dt>Domingo</dt>
+          <dd>Fechado</dd>
+        </dl>
+      </section>
+
+      <section>
+        <h2>Envie uma mensagem</h2>
+        <form action="#" method="post">
+          <p>
+            <label for="contato-nome">Nome *</label>
+            <input type="text" id="contato-nome" name="nome" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="contato-email">E-mail *</label>
+            <input type="email" id="contato-email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="contato-assunto">Assunto *</label>
+            <select id="contato-assunto" name="assunto" required>
+              <option value="">Escolha um assunto</option>
+              <option value="duvida">Dúvida</option>
+              <option value="sugestao">Sugestão</option>
+              <option value="campeonato">Campeonato</option>
+            </select>
+          </p>
+          <p>
+            <label for="contato-mensagem">Mensagem *</label>
+            <textarea id="contato-mensagem" name="mensagem" rows="6" maxlength="500" required></textarea>
+          </p>
+          <p>
+            <button type="submit">Enviar mensagem</button>
+            <button type="reset">Limpar</button>
+          </p>
+        </form>
+      </section>
     </main>
     <footer>
       <p>Theo Lorentz Padilha — DSM3-2025 — 2026</p>
