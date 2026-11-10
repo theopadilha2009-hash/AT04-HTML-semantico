@@ -20,6 +20,100 @@
       </nav>
     </header>
     <main id="conteudo">
+      <h1>Inscrição no campeonato de construção</h1>
+      <p>Preencha o formulário para participar do campeonato escolar de construção no Roblox Studio. Os campos com asterisco (*) são obrigatórios.</p>
+
+      <form action="#" method="post">
+        <fieldset>
+          <legend>Dados do participante</legend>
+          <p>
+            <label for="nome">Nome completo *</label>
+            <input type="text" id="nome" name="nome" autocomplete="name" required>
+          </p>
+          <p>
+            <label for="email">E-mail *</label>
+            <input type="email" id="email" name="email" autocomplete="email" required>
+          </p>
+          <p>
+            <label for="telefone">Telefone</label>
+            <input type="tel" id="telefone" name="telefone" autocomplete="tel" pattern="\([0-9]{2}\) [0-9]{4,5}-[0-9]{4}" title="Use o formato (11) 91234-5678">
+          </p>
+          <p>
+            <label for="nascimento">Data de nascimento *</label>
+            <input type="date" id="nascimento" name="nascimento" autocomplete="bday" required>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Categoria do campeonato *</legend>
+          <p>
+            <input type="radio" id="cat-obby" name="categoria" value="obby" required>
+            <label for="cat-obby">Obby</label>
+          </p>
+          <p>
+            <input type="radio" id="cat-cidade" name="categoria" value="cidade">
+            <label for="cat-cidade">Cidade</label>
+          </p>
+          <p>
+            <input type="radio" id="cat-aventura" name="categoria" value="aventura">
+            <label for="cat-aventura">Aventura</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Experiência com o Roblox Studio</legend>
+          <p>
+            <label for="nivel">Meu nível *</label>
+            <select id="nivel" name="nivel" required>
+              <option value="">Escolha uma opção</option>
+              <option value="iniciante">Iniciante</option>
+              <option value="intermediario">Intermediário</option>
+              <option value="avancado">Avançado</option>
+            </select>
+          </p>
+          <p>
+            <label for="horas">Horas de jogo por semana</label>
+            <input type="number" id="horas" name="horas" min="0" max="40" value="5">
+          </p>
+          <p>
+            <label for="nota">Nota que dou ao Roblox Studio (0 a 10)</label>
+            <input type="number" id="nota" name="nota" min="0" max="10" step="0.5" value="8.5">
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Modos de jogo preferidos</legend>
+          <p>
+            <input type="checkbox" id="modo-solo" name="modos" value="solo">
+            <label for="modo-solo">Solo</label>
+          </p>
+          <p>
+            <input type="checkbox" id="modo-dupla" name="modos" value="dupla">
+            <label for="modo-dupla">Em dupla</label>
+          </p>
+          <p>
+            <input type="checkbox" id="modo-equipe" name="modos" value="equipe">
+            <label for="modo-equipe">Em equipe</label>
+          </p>
+        </fieldset>
+
+        <fieldset>
+          <legend>Finalização</legend>
+          <p>
+            <label for="mensagem">Por que você quer participar? (até 300 caracteres)</label>
+            <textarea id="mensagem" name="mensagem" rows="5" maxlength="300"></textarea>
+          </p>
+          <p>
+            <input type="checkbox" id="termos" name="termos" value="aceito" required>
+            <label for="termos">Li e aceito os termos do campeonato *</label>
+          </p>
+        </fieldset>
+
+        <p>
+          <button type="submit">Enviar inscrição</button>
+          <button type="reset">Limpar formulário</button>
+        </p>
+      </form>
     </main>
     <footer>
       <p>Theo Lorentz Padilha — DSM3-2025 — 2026</p>
