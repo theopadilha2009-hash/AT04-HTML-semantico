@@ -53,6 +53,14 @@ Recursos aplicados:
 - `<dl>` para o glossário e para o horário de atendimento, porque são pares termo/descrição.
 - `<address>` para as informações de contato do responsável pelo site.
 
+## Dificuldades encontradas e como foram resolvidas
+
+- **Troca de tema:** o site começou sobre Roblox e foi trocado por startups. Como a estrutura já estava validada, só os textos, as imagens e a tabela foram reescritos, uma página por vez, mantendo todos os requisitos de cada etapa.
+- **Dados da tabela:** não foi possível confirmar datas de fundação de empresas reais em uma fonte confiável, então a tabela usa startups fictícias, avisadas na própria página, com total e média conferidos por cálculo.
+- **`<br>` no endereço:** a regra proíbe `<br>` para criar espaço. Mesmo sendo um uso válido no endereço, cada linha virou um parágrafo dentro do `<address>` para não deixar dúvida.
+- **Link do menu pequeno no Lighthouse:** o item `target-size` só se resolve com CSS, que a atividade proíbe. Ficou registrado como pendência para a fase de estilo.
+- **Validação do formulário vazio:** o balão de erro do navegador não aparece em captura de tela automática comum, então a evidência foi feita com o Chrome aberto de verdade.
+
 ## Fontes consultadas
 
 - Referência de HTML: [MDN Web Docs](https://developer.mozilla.org/pt-BR/), [W3Schools](https://www.w3schools.com/html/) e [HTML Standard (WHATWG)](https://html.spec.whatwg.org/).
